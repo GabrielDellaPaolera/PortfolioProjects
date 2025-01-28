@@ -1,0 +1,192 @@
+/* Global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Estilos específicos para a página de monitoramento */
+.monitor-page {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.monitor-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 500px; /* Limita a largura da área de monitoramento */
+    text-align: center;
+}
+
+.monitor-container h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.monitor-container p {
+    font-size: 16px;
+    color: #555;
+}
+
+.monitor-container input[type="text"] {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.monitor-container input[type="text"]:focus {
+    border-color: #007BFF;
+}
+
+.monitor-container button {
+    padding: 12px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 80%;
+    max-width: 400px;
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+.monitor-container button:hover {
+    background-color: #0056b3;
+}
+
+.monitor-container pre {
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    padding: 15px;
+    max-height: 200px;
+    overflow-y: auto;
+    font-size: 14px;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Estilos para a página inicial */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+}
+
+.project-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.project-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.project {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    height: 200px;
+    transition: transform 0.3s ease;
+    position: relative;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project-image {
+    max-width: 100%; /* Garante que a imagem nunca ultrapasse a largura do contêiner */
+    max-height: 100%; /* Garante que a imagem nunca ultrapasse a altura do contêiner */
+    object-fit: contain; /* A imagem se ajusta ao contêiner sem ser cortada */
+}
+
+.project h2,
+.project p,
+.project a {
+    margin: 0;
+}
+
+.project h2 {
+    margin-top: 0;
+}
+
+.project p {
+    color: #555;
+    margin: 10px 0;
+}
+
+.project-container {
+    position: relative;
+}
+
+.project a {
+    color: #007BFF;
+    text-decoration: none;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.project a:hover {
+    background-color: #e0e0e0;
+}
+
+
+
+.project-link:last-of-type {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #007bff; /* Cor de fundo azul */
+    color: #fff; /* Cor do texto branco */
+    border-radius: 4px; /* Arredondamento */
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.project-link:last-of-type:hover {
+    background-color: #0056b3; /* Azul mais escuro no hover */
+}
