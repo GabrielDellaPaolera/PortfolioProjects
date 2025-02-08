@@ -46,6 +46,10 @@ func main() {
 		http.ServeFile(w, r, "static/monitor.html")
 	})
 
+	http.HandleFunc("/weather", func(w http.ResponseWriter, r *http.Request) {
+		http.ServeFile(w, r, "static/weather.html")
+	})
+
 	http.HandleFunc("/monitoraction", monitorSite)
 
 	fmt.Println("Iniciando o servidor na porta 8080")
