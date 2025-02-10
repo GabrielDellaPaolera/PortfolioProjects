@@ -1,0 +1,74 @@
+# Build Folders
+bin/
+obj/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Auto-generated files
+Generated\ Files/
+
+# Logs
+*.log
+
+# Visual Studio Code
+.vscode/
+
+# Rider
+.idea/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Configuration files
+appsettings*.json
+
+# DotNet
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# NPM
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Environment variables
+.env
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# Coverage
+coverage/
+*.coverage
+*.coveragexml
+*.codecov
+coverage*.json
+coverage*.xml
+*.lcov
+
+# Others
+*.vs/
