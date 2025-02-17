@@ -1,0 +1,16 @@
+services:
+  weatherapi:
+    build:
+      context: ./WeatherForecastAPI
+      dockerfile: Dockerfile
+    ports:
+      - "5000:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+
+  goservice:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
